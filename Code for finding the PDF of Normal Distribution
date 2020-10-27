@@ -1,0 +1,18 @@
+# To find the PDF of Normal Distribution
+# This code was created by Josiah Randleman
+pi = 3.141592653589793
+e = 2.718281828459045
+
+print('Please enter x for the equation:')
+x = float(input())
+print('Please enter the mean for the equation:')
+mean = float(input())
+print('Please enter the standard deviation for the equation:')
+stddev = float(input())
+
+
+# Formula divided up
+section_a = (1 / (stddev * ((2.0 * pi) ** 0.5)))
+section_b = (e ** (-(1 / 2) * (((x - mean) / stddev) ** 2)))
+# compute formula
+print(section_a * section_b)
